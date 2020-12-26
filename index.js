@@ -41,7 +41,7 @@ if (i === 0) {
 } else {
 }
 
-function checkSelector() {
+const checkSelector = () => {
   if (i === 0) {
     $leftSelector.style.opacity = ".5";
     $rightSelector.style.opacity = "1";
@@ -50,10 +50,10 @@ function checkSelector() {
     $leftSelector.style.opacity = "1";
   } else {
   }
-}
+};
 
-function sum() {
-  if (i === 1) {
+const sum = () => {
+  if (i >= presentations.length - 1) {
   } else {
     i += 1;
     $presentation.innerText = presentations[i];
@@ -62,9 +62,9 @@ function sum() {
     $img.src = images[i];
   }
   checkSelector();
-}
+};
 
-function minus() {
+const minus = () => {
   if (i === 0) {
   } else {
     i -= 1;
@@ -74,4 +74,4 @@ function minus() {
     $img.src = images[i];
   }
   checkSelector();
-}
+};

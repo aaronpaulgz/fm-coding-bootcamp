@@ -3,7 +3,7 @@
   --Grayish-Blue: hsl(240, 18%, 77%);
   --Grayish-Blue-Light: hsl(240, 18%, 77%, 0.1);
   --Primary-font: "Inter", "sans-serif";
-  --Font-size: 32px;
+  --Font-size: 30px;
 }
 
 * {
@@ -147,4 +147,66 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 720px) {
+  .container {
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .presentation {
+    width: 50vw;
+    max-width: 600px;
+    height: 100%;
+    order: 1;
+    margin: 0 auto;
+  }
+
+  #presentation {
+    top: 24%;
+    left: 12%;
+    text-align: left;
+    width: 125%;
+    z-index: 4;
+    font-size: var(--Font-size);
+  }
+
+  .slider--container {
+    width: 50vw;
+    max-width: 600px;
+    height: 100%;
+    order: 2;
+    margin: 0 auto;
+  }
+
+  .pattern-bg {
+    width: 490px;
+    right: 90px;
+  }
+
+  .slider--img {
+    width: 390px;
+  }
+
+  .slider--selectors {
+    left: 10%;
+  }
+
+  .presentation--data-container {
+    flex-direction: row;
+    align-items: center;
+    left: 16%;
+    bottom: 12rem;
+  }
+
+  .presentation--name {
+    margin-right: 12px;
+  }
+
+  .pattern-quote {
+    top: 24%;
+    right: 56%;
+  }
 }
