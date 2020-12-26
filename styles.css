@@ -16,7 +16,7 @@ html,
 body {
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .container {
@@ -25,8 +25,59 @@ body {
 }
 
 .presentation {
+  position: relative;
   height: 50vh;
+  /* padding: 1rem; */
   order: 2;
+}
+
+.pattern-curve {
+  position: absolute;
+  bottom: -72px;
+  z-index: 1;
+}
+
+.pattern-quote {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 40%;
+  width: 82px;
+}
+
+#presentation {
+  position: absolute;
+  z-index: 3;
+  font-size: 1.4rem;
+  padding: 2rem 1.2rem;
+  text-align: center;
+  font-family: var(--Primary-font);
+  font-weight: 300;
+  color: var(--Dark-Blue);
+}
+
+.presentation--data-container {
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  font-family: var(--Primary-font);
+  bottom: 7rem;
+  color: var(--Dark-Blue);
+}
+
+.presentation--name {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.presentation--description {
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.2rem 0 0 0;
+  color: var(--Grayish-Blue);
 }
 
 .slider--container {
